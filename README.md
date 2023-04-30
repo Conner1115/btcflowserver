@@ -1,3 +1,3 @@
 # BtcFlow
 
-Btcflow is a simple Replit extension that helps users understand how specific keys and concepts work in Bitcoin.
+A simple Replit extension powered by GPT-3 that helps users understand how specific keys and concepts work in Bitcoin.
