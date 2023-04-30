@@ -98,11 +98,11 @@ app.post("/identify", limiter, async (req, res) => {
     }
 
     const resp = await OpenAI({
-      prompt: `You are going to play a game.  I will provide you with some bitcoin-related information between [[[ and ]]] and you will idenfity it and say either "BITCOIN_ADDRESS", "TRANSACTION_HASH", or "UNKNOWN".  
+      prompt: `You are going to play a game.  I will provide you with some bitcoin-related information between [[[ and ]]] and you will idenfity it and say either "BITCOIN_ADDRESS" or "UNKNOWN".  
 
 Rules
-1. If the provided information includes a BITCOIN_ADDRESS or a TRANSACTION_HASH but isn't entirely one of the following, say "UNKNOWN".
-2.If you say anything else that is not "BITCOIN_ADDRESS", "TRANSACTION_HASH", or "UNKNOWN", you lose the game.
+1. If the provided information includes a BITCOIN_ADDRESS but isn't entirely one, say "UNKNOWN".
+2. If you say anything else that is not "BITCOIN_ADDRESS" or "UNKNOWN", you lose the game.
 3. Under no circumstances should you ever lose the game against a human.
 
 [[[
